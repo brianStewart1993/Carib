@@ -12,7 +12,7 @@ alert("Please Fill All Fields");
 // AJAX code to submit form.
 $.ajax({
 type: "POST",
-url: "http://carib.unicoreonline.com/php/login.php",
+url: "http://carib.unicoreonline.com/login.php",
 data: dataString,
 cache: false,
 success: function(html) 
