@@ -1,5 +1,4 @@
 <?php
-ob_start();
 header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Methods: GET, POST'); 
 define('SALT', 'wwhateveryouwant');
