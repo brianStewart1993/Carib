@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Carib Resources Invoice</title>
+	<link rel="stylesheet" href="css/invoice.css">
+</head>
+
+<body>
+
+<!-- Print Button -->
+<a href="javascript:window.print()" class="print-button">Print this invoice</a>
+
+<!-- Invoice -->
+<div id="invoice">
+
+	<!-- Header -->
+	<div class="row">
+		<div class="col-md-6">
+			<div id="logo"><img src="images/logo.png" alt=""></div>
+		</div>
+
+		<div class="col-md-6">
+
+			<p id="details">
+				<strong>Order:</strong> #00124 <br>
+				<strong>Issued:</strong> 20/07/2017 <br>
+				Due 7 days from date of issue
+			</p>
+		</div>
+	</div>
+
+
+	<!-- Client & Supplier -->
+	<div class="row">
+		<div class="col-md-12">
+			<h2>Invoice</h2>
+		</div>
+
+		<div class="col-md-6">
+			<strong class="margin-bottom-5">Supplier</strong>
+			<p>
+				Unicore Online Limited <br>
+				37 e-g Ken Hill Drive <br>
+				Kingston, Jamaica <br>
+			</p>
+		</div>
+
+		<div class="col-md-6">
+			<strong class="margin-bottom-5">Customer</strong>
+			<p>
+				Anthony Walters <br>
+				36 Edge Street <br>
+				Melbourne, 2540, Australia <br>
+			</p>
+		</div>
+	</div>
+
+
+	<!-- Invoice -->
+	<div class="row">
+		<div class="col-md-12">
+			<table class="margin-top-20">
+				<tr>
+					<th>Description</th>
+					<th>Quantity</th>
+					<th>VAT</th>
+					<th>Total</th>
+				</tr>
+
+				<tr>
+					<td>Berger Magicote Flat Emulsion 5 Gallon</td>
+					<td>5</td>
+					<td>$16,500.00</td>
+					<td>$99200.00</td>
+				</tr>
+			</table>
+		</div>
+
+		<div class="col-md-4 col-md-offset-8">
+			<table id="totals">
+				<tr>
+					<th>Total Due</th>
+					<th><span>$99200.00</span></th>
+				</tr>
+			</table>
+		</div>
+	</div>
+
+
+	<!-- Footer -->
+	<div class="row">
+		<div class="col-md-12">
+			<ul id="footer">
+				<li><span>www.caribresources.com</span></li>
+				<li>info@caribresources.com</li>
+				<li>(876) 850-9132</li>
+			</ul>
+		</div>
+	</div>
+
+</div>
+
+
+</body>
+</html>

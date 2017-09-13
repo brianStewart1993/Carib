@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Basic Page Needs
+    ================================================== -->
+    <title>Carib Resources</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/colors/main.css" id="colors">
+
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places&key=AIzaSyDUqS0ywGq6sQJoLEYVaEqMW2sJ4xaqyzg"></script>
+    <script type="text/javascript" src="js/search.js"></script>
+	<script type="text/javascript" src="js/RegisterResource.js"></script>
+
+  </head>
+  <body>
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+    <!-- Header Container
+    ================================================== -->
+    <header id="header-container">
+
+    	<!-- Header -->
+    	<div id="header">
+    		<div class="container">
+
+    			<!-- Left Side Content -->
+    			<div class="left-side">
+
+    				<!-- Logo -->
+    				<div id="logo">
+    					<a href="http://carib.unicoreonline.com/index.html"><img src="http://carib.unicoreonline.com/images/logo.png" alt=""></a>
+    				</div>
+
+    				<!-- Mobile Navigation -->
+    				<div class="menu-responsive">
+    					<i class="fa fa-reorder menu-trigger"></i>
+    				</div>
+
+    				<!-- Main Navigation -->
+    				<nav id="navigation" class="style-1">
+    					<ul id="responsive">
+
+    						<li><a class="current" href="http://carib.unicoreonline.com/index.html"></a>
+    							<!-- <ul>
+    								<li><a href="index.html">Home 1</a></li>
+    								<li><a href="index-2.html">Home 2</a></li>
+    								<li><a href="index.html">Home 3</a></li>
+    								<li><a href="index-4.html">Home 4</a></li>
+    							</ul> -->
+    						</li>
+
+    						<!-- <li><a href="http://carib.unicoreonline.com/listings-half-screen-map-grid-2.html"></a> -->
+    							<!-- <ul>
+    								<li><a href="#">List Layout</a>
+    									<ul>
+    										<li><a href="listings-list-with-sidebar.html">With Sidebar</a></li>
+    										<li><a href="listings-list-full-width.html">Full Width</a></li>
+    									</ul>
+    								</li>
+    								<li><a href="#">Grid Layout</a>
+    									<ul>
+    										<li><a href="listings-grid-with-sidebar-1.html">With Sidebar 1</a></li>
+    										<li><a href="listings-grid-with-sidebar-2.html">With Sidebar 2</a></li>
+    										<li><a href="listings-grid-full-width.html">Full Width</a></li>
+    									</ul>
+    								</li>
+    								<li><a href="#">Half Screen Map</a>
+    									<ul>
+    										<li><a href="listings-half-screen-map-list.html">List Layout</a></li>
+    										<li><a href="listings-half-screen-map-grid-1.html">Grid Layout 1</a></li>
+    										<li><a href="listings-half-screen-map-grid-2.html">Grid Layout 2</a></li>
+    									</ul>
+    								</li>
+    								<li><a href="listings-single-page.html">Single Listing</a></li>
+    							</ul> -->
+    						<!-- </li> -->
+
+    						<!-- <li><a href="pages-blog.html">Blog</a>
+    							<ul>
+    								<li><a href="pages-blog.html">Blog</a></li>
+    								<li><a href="pages-blog-post.html">Blog Post</a></li>
+    							</ul>
+    						</li> -->
+
+    						<!-- <li><a href="http://carib.unicoreonline.com/pages-contact.html"></a></li> -->
+
+    						<!-- <li><a href="#">User Panel</a>
+    							<ul>
+    								<li><a href="dashboard.html">Dashboard</a></li>
+    								<li><a href="dashboard-messages.html">Messages</a></li>
+    								<li><a href="dashboard-my-listings.html">My Listings</a></li>
+    								<li><a href="dashboard-reviews.html">Reviews</a></li>
+    								<li><a href="dashboard-bookmarks.html">Bookmarks</a></li>
+    								<li><a href="dashboard-add-listing.html">Add Listing</a></li>
+    								<li><a href="dashboard-my-profile.html">My Profile</a></li>
+    								<li><a href="dashboard-invoice.html">Invoice</a></li>
+    							</ul>
+    						</li>
+
+    						<li><a href="#">Pages</a>
+    							<ul>
+    								<li><a href="pages-blog.html">Blog</a>
+    									<ul>
+    										<li><a href="pages-blog.html">Blog</a></li>
+    										<li><a href="pages-blog-post.html">Blog Post</a></li>
+    									</ul>
+    								</li>
+    								<li><a href="pages-contact.html">Contact</a></li>
+    								<li><a href="pages-elements.html">Elements</a></li>
+    								<li><a href="pages-pricing-tables.html">Pricing Tables</a></li>
+    								<li><a href="pages-typography.html">Typography</a></li>
+    								<li><a href="pages-404.html">404 Page</a></li>
+    								<li><a href="pages-icons.html">Icons</a></li>
+    							</ul>
+    						</li>
+
+    					</ul> -->
+    					
+    							<li><a href="index.html" class="sign-in popup-with-zoom-anim">Home</a></li>
+    						
+    					
+    				</nav>
+    				<div class="clearfix"></div>
+    				<!-- Main Navigation / End -->
+
+    			</div>
+    			<!-- Left Side Content / End -->
+
+
+    			<!-- Right Side Content / End -->
+    			<!-- <div class="right-side">
+    				<div class="header-widget">
+
+    					<div class="user-menu">
+    						<div class="user-name"><span></span>Resource</div>
+    						<ul>
+    							<li><a href="http://carib.unicoreonline.com/register-resource.html"><i class="sl sl-icon-settings"></i> Register</a></li>
+    							<li><a href="#sign-in-dialog" class="sign-in popup-with-zoom-anim"><i class="im im-icon-Worker"></i> Sign In</a></li> -->
+    							<!-- <li><a href="dashboard-my-profile.html"><i class="sl sl-icon-user"></i> My Profile</a></li>
+    							<li><a href="index.html"><i class="sl sl-icon-power"></i> Logout</a></li> -->
+    						<!-- </ul> -->
+    					<!-- </div> -->
+    						<!-- <a href="#sign-in-dialog" class="sign-in popup-with-zoom-anim"><i class="im im-icon-Worker"></i> Resource Sign In</a>
+    								<ul>
+    										<li><a href="#">Register</a></li>
+    										<li><a href="#">Sign In</a></li>
+    								</ul>
+
+    					<a href="#sign-in-dialog" class="sign-in popup-with-zoom-anim"><i class="im im-icon-User"></i> Client Sign In</a> -->
+    					<!-- <a href="http://carib.unicoreonline.com/dashboard-add-listing.html" class="button border with-icon">Join as a Pro<i class="sl sl-icon-plus"></i></a> -->
+
+    				</div>
+
+    			<!-- <div class="header-widget">
+    				<div class="user-menu">
+    					<div class="user-name"><span></span>Client</div>
+    					<ul>
+    						<li><a href="http://carib.unicoreonline.com/register-client.html"><i class="sl sl-icon-settings"></i> Register</a></li>
+    						<li><a href="#sign-in-dialog" class="sign-in popup-with-zoom-anim"><i class="im im-icon-Worker"></i> Sign In</a></li>
+    					</ul>
+
+    			</div>
+
+
+    			</div> -->
+    			<!-- Right Side Content / End -->
+
+    			<!-- Sign In Popup -->
+    			<div id="sign-in-dialog" class="zoom-anim-dialog mfp-hide">
+
+    				<div class="small-dialog-header">
+    					<h3><center>Sign In</center></h3>
+    				</div>
+
+    				<div class="sign-in-form style-1">
+
+    					<div class="tab-content" id="tab1" style="display: none;">
+    						<form method="post" class="login" action="php/login.php">
+
+    							<p class="form-row form-row-wide">
+    								<label for="clientusername">Username:
+    									<i class="im im-icon-Male"></i>
+    									<input type="text" class="input-text" name="username" id="username" value="" />
+    								</label>
+    							</p>
+
+    							<p class="form-row form-row-wide">
+    								<label for="clientpassword">Password:
+    									<i class="im im-icon-Lock-2"></i>
+    									<input class="input-text" type="password" name="password" id="password"/>
+    								</label>
+    								<span class="lost_password">
+    									<a href="#" >Lost Your Password?</a>
+    								</span>
+    							</p>
+
+    							<div class="form-row">
+    									<input type="submit" class="button border margin-top-5" name="login" value="Login"/>
+    								<div class="checkboxes margin-top-10">
+    									<input id="remember-me" type="checkbox" name="check">
+    									<label for="remember-me">Remember Me</label>
+    								</div>
+    							</div>
+
+                               </form>
+    					</div>
+    					</div>
+    					</div>
+
+    <!--
+    			<div id="sign-in-dialog" class="zoom-anim-dialog mfp-hide">
+
+    				<div class="small-dialog-header">
+    					<h3><center>Resource Sign In</center></h3>
+    				</div> -->
+
+    				<!--Tabs
+    				<div class="sign-in-form style-1"> -->
+
+    					<!-- <ul class="tabs-nav">
+    						<li class=""><a href="#tab1">Log In</a></li>
+    						<li><a href="#tab2">Register</a></li>
+    					</ul> -->
+
+    					<!-- <div class="tabs-container alt"> -->
+
+    						<!-- Login -->
+    						<!--
+    						<div class="tab-content" id="tab1" style="display: none;">
+    							<form method="post" class="login">
+
+    								<p class="form-row form-row-wide">
+    									<label for="username">Username:
+    										<i class="im im-icon-Male"></i>
+    										<input type="text" class="input-text" name="username" id="username" value="" />
+    									</label>
+    								</p>
+
+    								<p class="form-row form-row-wide">
+    									<label for="password">Password:
+    										<i class="im im-icon-Lock-2"></i>
+    										<input class="input-text" type="password" name="password" id="password"/>
+    									</label>
+    									<span class="lost_password">
+    										<a href="#" >Lost Your Password?</a>
+    									</span>
+    								</p>
+
+    								<div class="form-row">
+    										<input type="submit" class="button border margin-top-5" name="login" value="Login"/>
+    									<div class="checkboxes margin-top-10">
+    										<input id="remember-me" type="checkbox" name="check">
+    										<label for="remember-me">Remember Me</label>
+    									</div>
+    								</div>
+
+
+    						</div>
+    						</div>
+    						</div>
+    						-->
+
+    						<!-- Register -->
+    						<div class="tab-content" id="tab2" style="display: none;">
+
+    							<form method="post" class="register">
+
+    							<p class="form-row form-row-wide">
+    								<label for="username2">Username:
+    									<i class="im im-icon-Male"></i>
+    									<input type="text" class="input-text" name="username" id="username2" value="" />
+    								</label>
+    							</p>
+
+    							<p class="form-row form-row-wide">
+    								<label for="email2">Email Address:
+    									<i class="im im-icon-Mail"></i>
+    									<input type="text" class="input-text" name="email" id="email2" value="" />
+    								</label>
+    							</p>
+
+    							<p class="form-row form-row-wide">
+    								<label for="password1">Password:
+    									<i class="im im-icon-Lock-2"></i>
+    									<input class="input-text" type="password" name="password1" id="password1"/>
+    								</label>
+    							</p>
+
+    							<p class="form-row form-row-wide">
+    								<label for="password2">Repeat Password:
+    									<i class="im im-icon-Lock-2"></i>
+    									<input class="input-text" type="password" name="password2" id="password2"/>
+    								</label>
+    							</p>
+
+    							<input type="submit" class="button border fw margin-top-10" name="register" value="Register" />
+
+    							</form>
+    						</div>
+
+    					</div>
+    				</div>
+    			</div>
+    			<!-- Sign In Popup / End -->
+
+    		</div>
+    	</div>
+    	<!-- Header / End -->
+
+    </header>
+    <div class="clearfix"></div>
+    <!-- Header Container / End -->
+
+          <div class="row">
+      			<div class="col-lg-12">
+
+      				<div id="add-listing">
+
+      					<!-- Section -->
+      					<div class="add-listing-section">
+
+      						<!-- Headline -->
+      						<div class="add-listing-headline">
+      							<center><h3><i class="sl sl-icon-doc"></i>RESOURCE REGISTRATION</h3></center>
+      						</div>
+
+      						<!-- Title -->
+							<form id="RegisterResource" method="post" enctype="multipart/form-data">
+                  <div class="imageupload panel panel-default">
+
+                        <!-- <div class="panel-heading clearfix"> -->
+                            <!-- <h3 class="panel-title pull-left">Upload Profile Image or Company logo</h3> -->
+                            <!-- <div class="btn-group pull-right">
+                                <button type="button" class="btn btn-primary active">File</button>
+                                <button type="button" class="btn btn-default">URL</button>
+                            </div>
+                        </div> -->
+
+                        <div class="file-tab panel-body">
+                          <h3>Upload Profile Image or Company logo</h3>
+                              <label class="btn btn-default btn-file">
+                                <span>Browse</span>
+                                <!-- The file is stored here. -->
+                                <input type="file" name="file" id="file" required>
+                              </label>
+                          <!--  <button type="button" class="btn btn-default">Remove</button> -->
+                        </div>
+
+                        <!-- <div class="url-tab panel-body">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Image URL">
+                                <div class="input-group-btn">
+                                    <button type="button" class="btn btn-default">Submit</button>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-default">Remove</button>
+                             The URL is stored here.
+                             <input type="hidden" name="image-url">
+                         </div> -->
+
+                    </div>
+
+      						<div class="row with-forms">
+      							<div class="col-md-12">
+      								<h5>Company <span>(Optional)</span></h5>
+      								<input class="search-field" type="text" value="" name="company" id="company">
+      							</div>
+      						</div>
+
+                  <div class="row with-forms">
+      							<div class="col-md-6">
+      								<h5>First Name</h5>
+      								<input class="search-field" type="text" value="" name="fname" id="fname" required>
+      							</div>
+
+                    <div class="col-md-6">
+      								<h5>Last Name</h5>
+      								<input class="search-field" type="text" value="" name="lname" id="lname" required>
+      							</div>
+
+      						</div>
+
+                  <div class="row with-forms">
+      							<div class="col-md-12">
+      								<h5>Username</h5>
+      								<input class="search-field" type="text" value="" name="username" id="username" required>
+      							</div>
+      						</div>
+
+                  <div class="row with-forms">
+      							<div class="col-md-12">
+      								<h5>Email Address</h5>
+      								<input class="search-field" type="email" value="" name="email" id="email" required>
+      							</div>
+      						</div>
+
+                  <div class="row with-forms">
+      							<div class="col-md-12">
+      								<h5>Enter password</h5>
+      								<input class="search-field" type="password" value="" name="pwd" id="pwd" required>
+      							</div>
+      						</div>
+
+                  <div class="row with-forms">
+      							<div class="col-md-12">
+      								<h5>Confirm password</h5>
+      								<input class="search-field" type="password" value="" name="pwdrepeat" id="pwdrepeat" required>
+      							</div>
+      						</div>
+
+                  <div class="row with-forms">
+                    <div class="col-md-4">
+                      <h5>Telephone Number</h5>
+                      <input class="search-field" type="number" value="Country Code" placeholder="+1"/>
+                    </div>
+
+                    <div class="col-md-4">
+                      <h5>Area Code</h5>
+                      <input class="search-field" type="number" value="Area Code" placeholder="876"/>
+                    </div>
+
+                    <div class="col-md-4">
+                      <h5>Number</h5>
+                      <input class="search-field" type="number" value="" placeholder="4332" name="phone" id="phone" required>
+                    </div>
+                  </div>
+
+      						<!-- Row -->
+      						<div class="row with-forms">
+
+      							<!-- Status -->
+      							<div class="col-md-6">
+      								<h5>Category</h5>
+      								<select class="chosen-select-no-single" name="category" id="category" required>
+      									<option label="Category">Select Category</option>
+                        <option>Real Estate</option>
+                        <option>Consultants</option>
+                        <option>Technical Services</option>
+                        <option>Courier Services</option>
+                        <option>Suppliers</option>
+                        <option>Transporters</option>
+                        <option>Project Management</option>
+                        <option>Supervisors</option>
+                        <option>Equipment</option>
+                        <option>Operators</option>
+      									<option>General Contractors</option>
+                        <option>Speciality Contractors</option>
+      									<option>Trade Crews</option>
+      									<option>Tradesmen</option>
+      									<option>Labourers</option>
+      									<option>Operations</option>
+      								</select>
+      							</div>
+
+      							<div class="col-md-6">
+      								<h5>Trade</h5>
+      								<select class="chosen-select-no-single" name="trade" id="trade" required>
+      									<option label="Trade">Select Trade</option>
+      									<option>Carpenter</option>
+      									<option>Plumber</option>
+      									<option>Electrician</option>
+      									<option>Mason</option>
+      									<option>Tiler</option>
+      									<option>Painter</option>
+      									<option>Plaster Man</option>
+      								</select>
+      							</div>
+
+      							<!-- Type -->
+      							<!-- <div class="col-md-6">
+      								<h5>Keyword <i class="tip" data-tip-content="Maximum of 15 keywords related with your business"></i></h5>
+      								<input type="text" placeholder="Keywords should be separated by commas">
+      							</div> -->
+
+                    <!-- Checkboxes -->
+        						<!-- <h5 class="col-md-6">What other services do you provide?<span></span></h5>
+        						<div class="checkboxes in-row margin-bottom-20">
+
+        							<input id="check-a" type="checkbox" name="check">
+        							<label for="check-a">Shower Installation</label>
+
+        							<input id="check-b" type="checkbox" name="check">
+        							<label for="check-b">Doorway Widening</label>
+
+        							<input id="check-c" type="checkbox" name="check">
+        							<label for="check-c">Home Modification</label>
+
+        							<input id="check-d" type="checkbox" name="check">
+        							<label for="check-d">Kitchen Remodel</label>
+
+        							<input id="check-e" type="checkbox" name="check" >
+        							<label for="check-e">Exterior Painting</label>
+
+        							<input id="check-f" type="checkbox" name="check" >
+        							<label for="check-f">General Carpentry</label> -->
+
+        							<!-- <input id="check-g" type="checkbox" name="check">
+        							<label for="check-g">Fence or Gate Installation</label>
+
+        							<input id="check-h" type="checkbox" name="check">
+        							<label for="check-h">Handyman</label> -->
+
+        						<!-- </div> -->
+
+                    <!-- <h5 class="col-md-12">Can you travel to people?<span></span></h5> -->
+        						<!-- <div class="checkboxes in-row margin-bottom-20">
+                      <h5>Can you travel to people?</h5>
+
+        							<input id="check-a" type="checkbox" name="check">
+        							<label for="check-a">I will travel to my clients</label>
+
+        							<input id="check-b" type="checkbox" name="check">
+        							<label for="check-b">My customers travel to me</label>
+                    </div> -->
+        						<!-- Checkboxes / End -->
+
+      						</div>
+      						<!-- Row / End -->
+
+      					</div>
+      					<!-- Section / End -->
+
+      					<!-- Section -->
+      					<div class="add-listing-section margin-top-45">
+
+      						<!-- Headline -->
+      						<div class="add-listing-headline">
+      							<h3><i class="sl sl-icon-location"></i> What is your location?</h3>
+      						</div>
+
+      						<div class="submit-section">
+
+      							<!-- Row -->
+      							<div class="row with-forms">
+
+      								<!-- City -->
+      								<div class="col-md-6">
+      									<h5>Parish</h5>
+      									<select class="chosen-select-no-single" name="parish" id="parish" required>
+      										<option label="Select Parish">Select Parish</option>
+      										<option>Kingston</option>
+      										<option>St. Andrew</option>
+      										<option>St. Catherine</option>
+      										<option>Clarendon</option>
+      										<option>Manchester</option>
+      										<option>St. Elizabeth</option>
+      										<option>Westmoreland</option>
+      										<option>Hanover</option>
+      										<option>St. James</option>
+      										<option>Trelawny</option>
+      										<option>St. Ann</option>
+      										<option>St. Mary</option>
+      										<option>Portland</option>
+      										<option>St. Thomas</option>
+      									</select>
+      								</div>
+
+      								<!-- Address -->
+      								<div class="col-md-6">
+      									<h5>Address</h5>
+      									<input type="text" id="searchTextField" name="searchTextField" placeholder="e.g. 3 Constant Spring Road" required>
+      								</div>
+
+      								<!-- Address#2 -->
+      								<div class="col-md-6">
+      									<h5>Address #2</h5>
+      									<input type="text" name="addr2" id="addr2">
+      								</div>
+
+      								<!-- Address #3 -->
+      								<div class="col-md-6">
+      									<h5>Address #3</h5>
+      									<input type="text" name="addr3" id="addr3">
+      								</div>
+
+      							</div>
+      							<!-- Row / End -->
+
+      						</div>
+      					</div>
+      					<!-- Section / End -->
+
+                <div class="add-listing-section margin-top-45">
+
+                  <!-- Headline -->
+                  <div class="add-listing-headline">
+                    <h3><i class="sl sl-icon-location"></i> How far are you willing to travel?</h3>
+                  </div>
+
+                  <div class="submit-section">
+
+                    <!-- Row -->
+                    <div class="row with-forms">
+
+                      <!-- City -->
+                      <div class="col-md-6">
+                        <h5>Parish</h5>
+                        <select class="chosen-select-no-single" name="Tparish" id="Tparish" required>
+                          <option label="Select Miles or Parish">Select Miles or Parish</option>
+                          <option>1 mile</option>
+                          <option>2 mile</option>
+                          <option>3 mile</option>
+                          <option>5 mile</option>
+                          <option>10 mile</option>
+                          <option>20 mile</option>
+                          <option>30 mile</option>
+                          <option>40 mile</option>
+                          <option>50 mile</option>
+                          <option>Within Kingston</option>
+                          <option>Within St. Andrew</option>
+                          <option>Within St. Catherine</option>
+                          <option>Within Clarendon</option>
+                          <option>Within Manchester</option>
+                          <option>Within St. Elizabeth</option>
+                          <option>Within Westmoreland</option>
+                          <option>Within Hanover</option>
+                          <option>Within St. James</option>
+                          <option>Within Trelawny</option>
+                          <option>Within St. Ann</option>
+                          <option>Within St. Mary</option>
+                          <option>Within Portland</option>
+                          <option>Within St. Thomas</option>
+                        </select>
+                      </div>
+
+                      <!-- Address -->
+                      <div class="col-md-6">
+                        <h5>Have you travelled to any other Caribbean country? </h5>
+                        <input type="text" placeholder="Yes or No" name="TCCountry" id="TCCountry" required>
+                      </div>
+
+                      <!-- Address#2 -->
+                      <div class="col-md-6">
+                        <h5>Are you willing to travel to another Caribbean country for job?</h5>
+                        <input type="text" placeholder="Yes or No" name="WCCountry" id="WCCountry" required>
+                      </div>
+
+                      <!-- Address #3 -->
+                      <!-- <div class="col-md-6">
+                        <h5>Do you have a car?</h5>
+                        <input type="text" placeholder="Yes or No">
+                      </div> -->
+
+                    </div>
+                    <!-- Row / End -->
+
+                  </div>
+                </div>
+      					<!-- Section
+      					<div class="add-listing-section margin-top-45">
+
+      						<!-- Headline
+      						<div class="add-listing-headline">
+      							<h3><i class="sl sl-icon-picture"></i>Portfolio Gallery </h3>
+                    <h6><span>Upload professional images (1- 10) of your products or past jobs done</span>
+      						</div>
+
+      						<!-- Dropzone
+      						<div class="submit-section" class="col-md-12">
+      						<!--	<form action="/file-upload" class="dropzone" ></form>
+      						</div>
+
+      					</div>
+      					<!-- Section / End -->
+
+
+      					<!-- Section -->
+      					<div class="add-listing-section margin-top-45">
+
+      						<!-- Headline -->
+      						<div class="add-listing-headline">
+      							<h3><i class="sl sl-icon-docs"></i> BUSINESS HOURS AND BOOKING DETAILS</h3>
+      						</div>
+
+      						<!-- Description -->
+      						<div class="form">
+      							<h5>SHORT DESCRIPTION FOR BOOKING AND AVAILABLE DATES</h5>
+      							<textarea class="WYSIWYG" name="summary" cols="40" rows="3" id="summary" spellcheck="true" required></textarea>
+      						</div>
+
+
+
+                  <!--Calender -->
+                  <!-- <center><h5>This calender is displayed to show availability of resources</h5></center>
+                  <center><iframe src="https://calendar.google.com/calendar/embed?src=unicoreshopping%40gmail.com&ctz=America/New_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe></center> -->
+
+                  <!-- Calendar end -->
+
+      						<!-- Row -->
+      						<div class="row with-forms">
+
+      							<!-- Phone
+      							<div class="col-md-4">
+      								<h5>Phone <span>(optional)</span></h5>
+      								<input type="text">
+      							</div>
+
+      							<!-- Website -->
+      							<div class="col-md-4">
+      								<h5>Website <span>(optional)</span></h5>
+      								<input type="text" name="website" id="website">
+      							</div>
+
+      							<!-- Email Address
+      							<div class="col-md-4">
+      								<h5>E-mail <span>(optional)</span></h5>
+      								<input type="text">
+      							</div>
+
+      						</div>
+      						<!-- Row / End -->
+
+
+      						<!-- Row -->
+      						<div class="row with-forms">
+
+      							<!-- Phone -->
+      							<!-- <div class="col-md-4">
+      								<h5 class="fb-input"><i class="fa fa-facebook-square"></i> Facebook <span>(optional)</span></h5>
+      								<input type="text" placeholder="https://www.facebook.com/">
+      							</div> -->
+
+      							<!-- Website -->
+      							<!-- <div class="col-md-4">
+      								<h5 class="twitter-input"><i class="fa fa-twitter"></i> Twitter <span>(optional)</span></h5>
+      								<input type="text" placeholder="https://www.twitter.com/">
+      							</div> -->
+
+      							<!-- Email Address -->
+      							<!-- <div class="col-md-4">
+      								<h5 class="gplus-input"><i class="fa fa-google-plus"></i> Google Plus <span>(optional)</span></h5>
+      								<input type="text" placeholder="https://plus.google.com">
+      							</div> -->
+
+      						</div>
+      						<!-- Row / End -->
+
+                <center><div class="g-recaptcha" data-sitekey="6LcC4S8UAAAAABCkc7fMfYC_MMNjTWIuPmuO69rR"></div></center>
+				</br>
+				<center><input type="submit" value="Submit"></center>
+				</form>
+
+              <!--  <center><a href="http://carib.unicoreonline.com/listings-half-screen-map-grid-2.html" class="button preview">Submit <i class="fa fa-arrow-circle-right"></i></a></center> -->
+
+
+
+      					</div>
+      					<!-- Section / End -->
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+  </body>
+</html>
